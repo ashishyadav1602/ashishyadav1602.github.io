@@ -806,7 +806,7 @@ margin-left: 8%;
   text-align: center;
   color: white;
   height: 500px;
-  background-image: url("ashishbanner.png");
+  background-image: url("ashishbanner.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -931,11 +931,12 @@ margin-left: 8%;
 }
 
 .buttonbot{
+  position: relative;
   font-size: 18px;
   font-weight: bold;
 text-align: center;
 height: 25px;
-width: 100px;
+width: 130px;
 position: absolute;
 color: white;
 background: #e62429;
@@ -969,4 +970,23 @@ padding-bottom: 10px;
     background-image: url("ashishbanner.jpg");
     background-attachment: scroll;
   }
+}
+.buttonbot:before{
+  content: "";
+ position: absolute;
+ top: 0;
+ right: 0;
+ border-width: 0 13px 13px 0;
+ border-style: solid;
+ border-color: #e62429 #fff;
+}
+
+.buttonbot:after{
+  content: "";
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ border-width: 0 13px 13px 0;
+ border-style: solid;
+ border-color: #fff #e62429;
 }
