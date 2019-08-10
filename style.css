@@ -794,3 +794,179 @@ margin-left: 8%;
     text-align: center;
   }
 }
+
+.banner img{
+  width: 100%;
+  opacity: 0.7;
+  height: 500px;
+}
+
+.banner{
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 500px;
+  background-image: url("ashishbanner.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1{
+  display: none;
+}
+
+.name{
+  position: absolute;
+  bottom: 30%;
+  left: 5.5%;
+  letter-spacing: -1px;
+  font-size:20px;
+  font-weight: bold;
+}
+
+.nickname{
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  letter-spacing: -5px;
+  font-size:55px;
+  font-weight: bold;
+}
+
+.slogan{
+  position: absolute;
+  bottom: 8%;
+  left: 5.5%;
+  letter-spacing: 1px;
+  font-size:11px;
+  font-weight: bold;
+}
+
+.name:before {
+    left: 53px;
+    top: -8px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+
+.name:after {
+    left: -6px;
+    top: calc(100% + 3px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+
+.name:after, .name:before {
+    background-color: #eeb506;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 34px;
+}
+ :after, :before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ :after, :before, section {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ashishcontainer{
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.myself img{
+  padding-left: 15%;
+}
+
+@media only screen and (max-width:1000px) {
+  .img1{
+    display: block;
+  }
+  .img2{
+    display: none;
+  }
+  .banner{
+    height: 520px;
+  }
+  .banner img{
+    height: 330px;
+  }
+  .name{
+    bottom:25%;
+  }
+  .nickname{
+    bottom:8%;
+  }
+  .slogan{
+    bottom: 5%;
+  }
+}
+
+.myself{
+  position: relative;
+  color: black;
+  height: 557px;
+}
+
+.selfdesc{
+  position: absolute;
+  left: 55%;
+  top: 20%;
+}
+
+.selfdesc>h1{
+  color: black;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: -4px;
+}
+
+.buttonbot{
+  font-size: 18px;
+  font-weight: bold;
+text-align: center;
+height: 25px;
+width: 100px;
+position: absolute;
+color: white;
+background: #e62429;
+bottom: 20%;
+left: 55%;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+@media only screen and (max-width:1000px) {
+.myself{
+  height: 1200px;
+}
+.myself img{
+  padding-left: 7%;
+}
+.selfdesc{
+  top: 50%;
+  left: 10%;
+}
+.buttonbot{
+  bottom: 7%;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+}
+@media only screen and (max-width: 1000px) {
+  .parallax {
+    background-image: url("ashishbanner.jpg");
+    background-attachment: scroll;
+  }
+}
